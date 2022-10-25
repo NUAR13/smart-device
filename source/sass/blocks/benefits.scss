@@ -1,0 +1,134 @@
+.benefits {
+  padding: 120px 348px 60px 350px;
+
+  @media (max-width: $vp-1920) {
+    padding: 120px 98px 60px 100px;
+  }
+
+  @media (max-width: $vp-1024) {
+    padding: 80px 53px 40px 49px;
+  }
+
+  @media (max-width: $vp-770) {
+    padding: 50px 25px 25px;
+  }
+}
+
+.benefits__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 31px;
+  row-gap: 30px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @media (max-width: $vp-770) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 340px 340px 325px 325px;
+  }
+}
+
+.benefits__item {
+  display: flex;
+  min-height: 300px;
+
+  @media (max-width: $vp-1024) {
+    min-height: 360px;
+  }
+
+  @media (max-width: $vp-770) {
+    min-height: 325px;
+  }
+}
+
+.benefits__link {
+  position: relative;
+  width: 100%;
+  border: 1px solid #ebebeb;
+  padding: 40px 45px 60px;
+
+  @media (max-width: $vp-1024) {
+    padding: 40px 40px 27px 46px;
+  }
+
+  @media (max-width: $vp-770) {
+    padding: 27px 33px 35px 27px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: #00b2ff;
+    top: 0;
+    left: 0;
+  }
+
+  svg {
+    margin-bottom: 15px;
+    fill: #00b2ff;
+
+    @media (max-width: $vp-1024) {
+      margin-bottom: 6px;
+    }
+
+    @media (max-width: $vp-770) {
+      margin-bottom: 8px;
+    }
+  }
+
+  h2 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    color: #00b2ff;
+    margin-top: 0;
+    margin-bottom: 15px;
+
+    @media (max-width: $vp-1024) {
+      margin-bottom: 11px;
+    }
+
+    @media (max-width: $vp-770) {
+      font-size: 20px;
+      line-height: 140%;
+    }
+  }
+
+  p {
+    @media (max-width: $vp-770) {
+      font-size: 14px;
+      line-height: 135%;
+    }
+
+    font-family: $ff-ptmono;
+    font-size: 16px;
+    line-height: 135%;
+    color: #041827;
+    margin: 0;
+  }
+
+  &:hover {
+    background-color: #00b2ff;
+
+    svg {
+      fill: #f2f5f6;
+    }
+
+    p,
+    h2 {
+      color: #f2f5f6;
+    }
+  }
+
+  &:focus {
+    border: none;
+    outline: 2px solid #56c3b2;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}

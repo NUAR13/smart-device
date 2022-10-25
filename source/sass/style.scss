@@ -17,8 +17,19 @@
 
 // Blocks
 // ---------------------------------
-
-@import "blocks/btn";
+@import "blocks/button.scss";
+@import "blocks/page-header.scss";
+@import "blocks/navigation.scss";
+@import "blocks/sentence-sale.scss";
+@import "blocks/benefits.scss";
+@import "blocks/about-us.scss";
+@import "blocks/suggestions.scss";
+@import "blocks/feedback.scss";
+@import "blocks/forma.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social-list.scss";
+@import "blocks/sections-list.scss";
+@import "blocks/contacts-list.scss";
 @import "blocks/modal";
 
 // ---------------------------------

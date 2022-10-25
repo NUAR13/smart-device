@@ -1,0 +1,42 @@
+.feedback {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #00b3ff;
+
+  @media (max-width: $vp-1024) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.feedback__wrapper-img {
+  height: 840px;
+  position: relative;
+  background: linear-gradient(to bottom right, rgba(4, 24, 39, 0.5) 50%, #00b3ff 50%);
+
+  img {
+    position: absolute;
+    top: 29%;
+    right: 11%;
+  }
+
+  @media (max-width: $vp-1024) {
+    display: none;
+  }
+}
+
+.feedback__wrapper-form {
+  padding: 161px 358px 243px 21px;
+
+  @media (max-width: $vp-1920) {
+    padding-right: 100px;
+  }
+
+  @media (max-width: $vp-1024) {
+    padding: 46px 50px 124px;
+  }
+
+  @media (max-width: $vp-770) {
+    padding: 48px 25px 90px;
+  }
+}
+

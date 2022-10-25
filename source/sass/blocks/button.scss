@@ -1,0 +1,33 @@
+.button {
+  min-width: 160px;
+  min-height: 40px;
+  padding: 14px 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1px solid #f2f5f7;
+  border-radius: 3px;
+  color: #f2f5f7;
+  cursor: pointer;
+
+  &--red {
+    background-color: $color-torch-red;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    background-color: #56c3b2;
+  }
+}

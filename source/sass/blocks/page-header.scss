@@ -1,0 +1,16 @@
+.page-header {
+  background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  padding: 20px 0 35px 0;
+
+  @media (max-width: $vp-1920) {
+    padding: 20px 100px 35px;
+  }
+
+  @media (max-width: $vp-1024) {
+    padding: 10px 70px 25px 50px;
+  }
+
+  @media (max-width: $vp-770) {
+    padding: 8px 35px 20px 26px;
+  }
+}

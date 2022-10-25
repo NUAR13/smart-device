@@ -1,0 +1,22 @@
+.feedback {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 840px;
+  background-color: #00b3ff;
+}
+
+.feedback__wrapper-img {
+  height: 840px;
+  position: relative;
+  background: linear-gradient(to bottom right, rgba(4, 24, 39, 0.5) 50%, #00b3ff 50%);
+}
+
+.feedback__wrapper-img img {
+  position: absolute;
+  top: 29%;
+  right: 12%;
+}
+
+.feedback__wrapper-form {
+  padding: 170px 350px 250px 0;
+}

@@ -1,0 +1,29 @@
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation__link {
+  display: flex;
+  align-items: center;
+  color: #f2f5f7;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.navigation__link span {
+  padding-left: 15px;
+}
+
+.navigation__wrapper-contact {
+  display: grid;
+  grid-template-columns: 225px 225px;
+  column-gap: 30px;
+  align-items: center;
+  margin: 0 145px 0 160px;
+}
+
+.navigation__logo-mobile {
+  display: none;
+}

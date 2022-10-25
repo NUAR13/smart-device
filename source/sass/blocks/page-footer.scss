@@ -1,0 +1,165 @@
+.page-footer {
+  background: #041827;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: auto;
+  padding: 50px 350px 30px;
+
+  @media (max-width: $vp-1920) {
+    padding: 50px 100px 30px;
+  }
+
+  @media (max-width: $vp-1024) {
+    padding: 50px;
+  }
+
+  @media (max-width: $vp-770) {
+    padding: 0 0 35px;
+  }
+}
+
+.page-footer__wrapper-info {
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $vp-1024) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  @media (max-width: $vp-770) {
+    padding: 35px 25px 25px;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgba(248, 253, 255, 0.7);
+  }
+}
+
+.page-footer__link {
+  margin-bottom: 27px;
+
+  @media (max-width: $vp-770) {
+    margin-bottom: 3px;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    border: none;
+    outline: 2px solid #56c3b2;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.page-footer__wrapper-sections,
+.page-footer__wrapper-contact {
+  display: flex;
+  flex-direction: column;
+  margin-left: 160px;
+
+  h3 {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 5px;
+    margin-bottom: 20px;
+
+    @media (max-width: $vp-770) {
+      margin: 0;
+      padding-bottom: 15px;
+    }
+  }
+
+  @media (max-width: $vp-1920) {
+    margin-left: 70px;
+  }
+
+  @media (max-width: $vp-1024) {
+    margin-left: 0;
+  }
+
+  @media (max-width: $vp-770) {
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid rgba(248, 253, 255, 0.7);
+    padding: 23px 25px 10px;
+  }
+}
+
+.page-footer__wrapper-contact {
+  margin-left: 30px;
+
+  @media (max-width: $vp-1920) {
+    margin-left: 0;
+  }
+
+  @media (max-width: $vp-1024) {
+    padding-left: 100px;
+  }
+}
+
+.page-footer__button-wrapper {
+  display: flex;
+  position: absolute;
+  top: 13px;
+  right: 22px;
+}
+
+.page-footer__button-accordion {
+  display: none;
+
+  @media (max-width: $vp-770) {
+    display: flex;
+    position: relative;
+    min-width: 30px;
+    min-height: 30px;
+    width: 30px;
+    height: 30px;
+    background-color: #041827;
+    border: none;
+    padding: 0;
+
+    &::before,
+    &::after {
+      content: "";
+      background: #c4c4c4;
+      width: 15px;
+      height: 1px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    &::after {
+      transform: rotate(-90deg);
+    }
+  }
+}
+
+.page-footer__button-accordion.active::after {
+  transform: rotate(-180deg);
+}
+
+.page-footer__accordeon-list {
+  @media (max-width: $vp-770) {
+    display: none;
+  }
+}
+
+.page-footer__accordeon-show {
+  @media (max-width: $vp-770) {
+    display: flex;
+  }
+}

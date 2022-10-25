@@ -1,0 +1,38 @@
+.suggestions {
+  background: #041827;
+  padding: 70px 350px 140px;
+}
+
+.suggestions h2 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.suggestions__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 85px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.suggestions__item {
+  position: relative;
+}
+
+.suggestions__item h3 {
+  position: absolute;
+  top: 8%;
+  left: 11%;
+  width: 160px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  margin: 0;
+}

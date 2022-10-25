@@ -1,0 +1,252 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  min-width: 580px;
+  margin-left: auto;
+
+  h2 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 51px;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 15px;
+
+    @media (max-width: $vp-1024) {
+      margin-bottom: 7px;
+    }
+
+    @media (max-width: $vp-770) {
+      font-size: 30px;
+      line-height: 140.62%;
+      margin-left: -14px;
+    }
+  }
+
+  p {
+    font-family: $ff-ptmono;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 35px;
+
+    @media (max-width: $vp-1024) {
+      margin-bottom: 24px;
+    }
+
+    @media (max-width: $vp-770) {
+      font-size: 14px;
+      line-height: 134.4%;
+      margin-bottom: 30px;
+    }
+  }
+
+  textarea {
+    min-height: 155px;
+    padding: 25px 15px;
+    background: rgba(4, 20, 39, 0.15);
+    border: none;
+    border-radius: 3px;
+    font-family: $ff-ptmono;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+    margin-bottom: 33px;
+
+    @media (max-width: $vp-1024) {
+      padding-top: 28px;
+    }
+
+    @media (max-width: $vp-770) {
+      min-height: 180px;
+      margin-bottom: 30px;
+      padding-top: 23px;
+    }
+
+    &:hover {
+      background-color: #041427;
+    }
+
+    &:focus {
+      border: none;
+      outline: 2px solid #56c3b2;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  @media (max-width: $vp-1024) {
+    min-width: 670px;
+  }
+
+  @media (max-width: $vp-770) {
+    min-width: 270px;
+  }
+}
+
+.wrapper-input {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  margin-bottom: 20px;
+
+  input {
+    padding: 15px;
+    background: rgba(4, 20, 39, 0.15);
+    border: none;
+    border-radius: 3px;
+    font-family: $ff-ptmono;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+
+    &:hover {
+      background-color: #041427;
+    }
+
+    &:focus {
+      border: none;
+      outline: 2px solid #56c3b2;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  @media (max-width: $vp-770) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+
+    input {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+textarea::placeholder,
+input::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.wrapper-check {
+  display: flex;
+
+  label {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    padding-left: 26px;
+
+    span {
+      font-family: $ff-ptmono;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #ffffff;
+    }
+
+    @media (max-width: $vp-770) {
+      padding-left: 30px;
+    }
+  }
+
+  @media (max-width: $vp-770) {
+    flex-direction: column;
+  }
+}
+
+.button--forma {
+  min-width: 265px;
+  font-size: 16px;
+  line-height: 19px;
+  border: none;
+  background: #041427;
+  border-radius: 3px;
+  margin-right: 50px;
+
+  @media (max-width: $vp-1024) {
+    margin-right: 85px;
+  }
+
+  @media (max-width: $vp-770) {
+    margin-right: 0;
+    margin-bottom: 21px;
+  }
+}
+
+input[type="checkbox"] + span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  vertical-align: text-top;
+  background: #00b2ff;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  margin: 0;
+
+  @media (max-width: $vp-770) {
+    left: 1%;
+  }
+}
+
+input[type="checkbox"]:checked + span::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 7px;
+  height: 6px;
+  content: "";
+  background-image: url("../img/svg/arrow-form.svg");
+  background-repeat: no-repeat;
+}
+
+input[type="checkbox"]:hover + span {
+  background-color: #041427;
+}
+
+input[type="checkbox"]:focus + span {
+  border: 3px solid #56c3b2;
+}
+
+input[type="checkbox"]:active + span::before {
+  opacity: 0.5;
+}
+
+input:valid {
+  border-color: #56c3b2;
+  color: #56c3b2;
+  box-shadow: none;
+}
+
+input:invalid {
+  border-color: rgb(255, 0, 0);
+  color: rgb(255, 0, 0);
+  box-shadow: none;
+}
+
+input:focus:valid {
+  border-color: #56c3b2;
+  color: #56c3b2;
+  box-shadow: none;
+}
+
+input:focus:invalid {
+  border-color: rgb(255, 0, 0);
+  color: rgb(255, 0, 0);
+  box-shadow: none;
+}

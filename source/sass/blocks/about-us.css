@@ -1,0 +1,24 @@
+.about-us {
+  display: flex;
+  padding: 60px 350px 100px;
+}
+
+.about-us img {
+  margin-right: 100px;
+}
+
+.about-us h2 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.about-us__button {
+  font-size: 14px;
+  line-height: 16px;
+  color: #00b2ff;
+  border: 1px solid #00b2ff;
+  background: #f8fdff;
+}

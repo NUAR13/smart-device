@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 10px;
+}
+
+.body-lock {
+  overflow-y: scroll;
+  position: fixed;
+}
+
+.container {
+  min-height: 200vh;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-open {
+  display: flex;
+}
+
+.modal__content {
+  background-color: #ffffff;
+  width: 500px;
+  padding: 20px;
+}
+
+button:focus {
+  border: 2px solid #ffffff;
+}

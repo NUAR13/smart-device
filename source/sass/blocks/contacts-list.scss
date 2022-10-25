@@ -1,0 +1,25 @@
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-list__item {
+  margin-bottom: 7px;
+
+  address {
+    font-family: $ff-ptmono;
+    font-size: 16px;
+    line-height: 135%;
+    color: rgba(255, 255, 255, 0.7);
+    font-style: normal;
+
+    @media (max-width: $vp-770) {
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+  }
+
+  @media (max-width: $vp-770) {
+    margin-bottom: 5px;
+  }
+}
