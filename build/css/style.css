@@ -983,11 +983,11 @@ a:hover .navigation__logo-desktop {
   margin-bottom: 53px;
 }
 
-.suggetions__heading-desktop {
+.suggestions h2 > span:nth-child(1) {
   display: block;
 }
 
-.suggetions__heading-mobile {
+.suggestions h2 > span:nth-child(2) {
   display: none;
   width: 250px;
 }
@@ -2111,11 +2111,11 @@ button:focus {
     margin-bottom: 26px;
   }
 
-  .suggetions__heading-desktop {
+  .suggestions h2 > span:nth-child(1) {
     display: none;
   }
 
-  .suggetions__heading-mobile {
+  .suggestions h2 > span:nth-child(2) {
     display: block;
   }
 
