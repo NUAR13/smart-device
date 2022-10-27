@@ -771,7 +771,7 @@ button,
 
 .sentence-sale {
   min-height: 880px;
-  background-image: url("../img/background-main.png");
+  background-image: url("../img/background-main.webp");
   background-size: cover;
   background-position: 50%;
   position: relative;
@@ -1027,17 +1027,17 @@ button,
 }
 
 .suggestions__link--production {
-  background-image: url("../img/card-desktop-1.png");
+  background-image: url("../img/card-desktop-1.webp");
   -webkit-backdrop-filter: opacity(20%);
   backdrop-filter: opacity(20%);
 }
 
 .suggestions__link--mounting {
-  background-image: url("../img/card-desktop-2.png");
+  background-image: url("../img/card-desktop-2.webp");
 }
 
 .suggestions__link--accessories {
-  background-image: url("../img/card-desktop-3.png");
+  background-image: url("../img/card-desktop-3.webp");
 }
 
 .suggestions__link:hover {
@@ -1738,7 +1738,7 @@ button:focus {
 
   .sentence-sale {
     min-height: 640px;
-    background-image: url("../img/background-main-tablet.png");
+    background-image: url("../img/background-main-tablet.webp");
   }
 
   .sentence-sale h1 {
@@ -1830,15 +1830,15 @@ button:focus {
   }
 
   .suggestions__link--production {
-    background-image: url("../img/card-tablet-1.png");
+    background-image: url("../img/card-tablet-1.webp");
   }
 
   .suggestions__link--mounting {
-    background-image: url("../img/card-tablet-2.png");
+    background-image: url("../img/card-tablet-2.webp");
   }
 
   .suggestions__link--accessories {
-    background-image: url("../img/card-tablet-3.png");
+    background-image: url("../img/card-tablet-3.webp");
   }
 
   .feedback {
@@ -1923,19 +1923,19 @@ button:focus {
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
   .sentence-sale .sentence-sale {
-    background-image: url("../img/background-main-tablet@2x.png");
+    background-image: url("../img/background-main-tablet@2x.webp");
   }
 
   .suggestions__link--production--production {
-    background-image: url("../img/card-tablet-1@2x.png");
+    background-image: url("../img/card-tablet-1@2x.webp");
   }
 
   .suggestions__link--mounting--production {
-    background-image: url("../img/card-tablet-2@2x.png");
+    background-image: url("../img/card-tablet-2@2x.webp");
   }
 
   .suggestions__link--accessories--production {
-    background-image: url("../img/card-tablet-3@2x.png");
+    background-image: url("../img/card-tablet-3@2x.webp");
   }
 }
 
@@ -1962,7 +1962,7 @@ button:focus {
 
   .sentence-sale {
     min-height: 560px;
-    background-image: url("../img/background-main-mobile.png");
+    background-image: url("../img/background-main-mobile.webp");
   }
 
   .sentence-sale h1 {
@@ -2098,15 +2098,15 @@ button:focus {
   }
 
   .suggestions__link--production {
-    background-image: url("../img/card-mobile-1.png");
+    background-image: url("../img/card-mobile-1.webp");
   }
 
   .suggestions__link--mounting {
-    background-image: url("../img/card-mobile-2.png");
+    background-image: url("../img/card-mobile-2.webp");
   }
 
   .suggestions__link--accessories {
-    background-image: url("../img/card-mobile-3.png");
+    background-image: url("../img/card-mobile-3.webp");
   }
 
   .suggestions__link::after {
@@ -2270,19 +2270,19 @@ button:focus {
 
 @media (max-width: 769px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 769px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 769px) and (min-resolution: 144dpi), (max-width: 769px) and (min-resolution: 1.5dppx) {
   .sentence-sale .sentence-sale {
-    background-image: url("../img/background-main-mobile@2x.png");
+    background-image: url("../img/background-main-mobile@2x.webp");
   }
 
   .suggestions__link--production--production {
-    background-image: url("../img/card-mobile-1@2x.png");
+    background-image: url("../img/card-mobile-1@2x.webp");
   }
 
   .suggestions__link--mounting--production {
-    background-image: url("../img/card-mobile-1@2x.png");
+    background-image: url("../img/card-mobile-1@2x.webp");
   }
 
   .suggestions__link--accessories--production {
-    background-image: url("../img/card-mobile-3@2x.png");
+    background-image: url("../img/card-mobile-3@2x.webp");
   }
 }
 
@@ -2300,18 +2300,18 @@ button:focus {
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .sentence-sale .sentence-sale {
-    background-image: url("../img/background-main@2x.png");
+    background-image: url("../img/background-main@2x.webp");
   }
 
   .suggestions__link--production--production {
-    background-image: url("../img/card-desktop-1@2x.png");
+    background-image: url("../img/card-desktop-1@2x.webp");
   }
 
   .suggestions__link--mounting--production {
-    background-image: url("../img/card-desktop-2@2x.png");
+    background-image: url("../img/card-desktop-2@2x.webp");
   }
 
   .suggestions__link--accessories--production {
-    background-image: url("../img/card-desktop-3@2x.png");
+    background-image: url("../img/card-desktop-3@2x.webp");
   }
 }

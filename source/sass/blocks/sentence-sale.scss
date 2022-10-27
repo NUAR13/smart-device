@@ -1,6 +1,6 @@
 .sentence-sale {
   min-height: 880px;
-  background-image: url("../img/background-main.png");
+  background-image: url("../img/background-main.webp");
   background-size: cover;
   background-position: 50%;
   position: relative;
@@ -8,30 +8,30 @@
   @media (min-resolution: 144dpi),
     (min-resolution: 1.5dppx) {
     .sentence-sale {
-      background-image: url("../img/background-main@2x.png");
+      background-image: url("../img/background-main@2x.webp");
     }
   }
 
   @media (max-width: $vp-1024) {
     min-height: 640px;
-    background-image: url("../img/background-main-tablet.png");
+    background-image: url("../img/background-main-tablet.webp");
 
     @media (min-resolution: 144dpi),
       (min-resolution: 1.5dppx) {
       .sentence-sale {
-        background-image: url("../img/background-main-tablet@2x.png");
+        background-image: url("../img/background-main-tablet@2x.webp");
       }
     }
   }
 
   @media (max-width: $vp-770) {
     min-height: 560px;
-    background-image: url("../img/background-main-mobile.png");
+    background-image: url("../img/background-main-mobile.webp");
 
     @media (min-resolution: 144dpi),
       (min-resolution: 1.5dppx) {
       .sentence-sale {
-        background-image: url("../img/background-main-mobile@2x.png");
+        background-image: url("../img/background-main-mobile@2x.webp");
       }
     }
   }
