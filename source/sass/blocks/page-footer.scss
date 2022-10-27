@@ -36,7 +36,7 @@
   }
 }
 
-.page-footer__link {
+.page-footer__wrapper-info a {
   margin-bottom: 27px;
 
   @media (max-width: $vp-770) {
@@ -75,7 +75,7 @@
 
     @media (max-width: $vp-770) {
       margin: 0;
-      padding-bottom: 15px;
+      padding-bottom: 13px;
     }
   }
 
@@ -114,7 +114,7 @@
   right: 22px;
 }
 
-.page-footer__button-accordion {
+.page-footer__button-wrapper button {
   display: none;
 
   @media (max-width: $vp-770) {
@@ -148,7 +148,7 @@
   }
 }
 
-.page-footer__button-accordion.active::after {
+.page-footer__button-wrapper button.active::after {
   transform: rotate(-180deg);
 }
 

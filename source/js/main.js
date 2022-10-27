@@ -52,12 +52,12 @@ const openModalButton = document.querySelector('.open-modal')
 const closeModalButton = document.querySelector('.modal__close')
 
 function existVerticalScroll() {
-   return document.body.offsetHeight > window.innerHeight
+  return document.body.offsetHeight > window.innerHeight
 }
 
 function getBodyScrollTop() {
-    return self.pageYOffset || (document.documentElement && document.documentElement.ScrollTop) || (document.body && document.body.scrollTop);
-  }
+  return self.pageYOffset || (document.documentElement && document.documentElement.ScrollTop) || (document.body && document.body.scrollTop);
+}
 
 openModalButton.addEventListener('click', e => {
   e.preventDefault()
@@ -68,9 +68,9 @@ openModalButton.addEventListener('click', e => {
   modal.classList.add('modal-open')
 
   if(existVerticalScroll()) {
-     body.classList.add('body-lock')
-     body.style.top = `-${body.dataset.scrollY}px`
-   }
+    body.classList.add('body-lock')
+    body.style.top = `-${body.dataset.scrollY}px`
+  }
 })
 
 closeModalButton.addEventListener('click', e => {
@@ -82,7 +82,7 @@ closeModalButton.addEventListener('click', e => {
 })
 
 let allElems = document.querySelectorAll('.page-footer .page-footer__button-wrapper');
-let allButton = document.querySelectorAll('.page-footer .page-footer__button-accordion');
+let allButton = document.querySelectorAll('.page-footer .open-accordion');
 
 allElems.forEach((elem)=>{
     elem.addEventListener('click', function(evt){

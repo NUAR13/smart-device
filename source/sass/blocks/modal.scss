@@ -41,31 +41,27 @@
       font-size: 14px;
       line-height: 16px;
     }
-
-    .wrapper-check {
-      flex-direction: column;
-    }
   }
 }
 
-.wrapper-input--modal {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 0;
+.modal__content button[type="button"] {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  padding: 0;
+  background-color: #00b3ff;
+  border: none;
 
-  input {
-    margin-bottom: 20px;
-    padding: 14px 15px;
+  svg {
+    margin: auto;
   }
 }
 
-.wrapper-check--modal {
-  label {
-    padding-left: 30px;
-  }
-}
-
-.button--modal {
+.wrapper-check--modal button {
   margin-right: 0;
   margin-bottom: 20px;
   padding: 14px 10px;
@@ -73,18 +69,4 @@
 
 button:focus {
   border: 2px solid #ffffff;
-}
-
-.modal__close {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  width: 40px;
-  height: 40px;
-  background-color: #00b3ff;
-  border: none;
-
-  svg {
-    margin: auto;
-  }
 }

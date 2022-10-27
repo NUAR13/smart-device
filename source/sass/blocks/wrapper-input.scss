@@ -1,0 +1,51 @@
+.wrapper-input {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  margin-bottom: 20px;
+
+  input {
+    padding: 15px;
+    background: rgba(4, 20, 39, 0.15);
+    border: none;
+    border-radius: 3px;
+    font-family: $ff-ptmono;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+
+    &:hover {
+      background-color: #041427;
+    }
+
+    &:focus {
+      border: none;
+      outline: 2px solid #56c3b2;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  @media (max-width: $vp-770) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+
+    input {
+      margin-bottom: 20px;
+    }
+  }
+
+  &--modal {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+
+    input {
+      margin-bottom: 20px;
+      padding: 14px 15px;
+    }
+  }
+}

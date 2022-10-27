@@ -1,0 +1,63 @@
+.wrapper-check {
+  display: flex;
+
+  label {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    padding-left: 26px;
+
+    span {
+      font-family: $ff-ptmono;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #ffffff;
+    }
+
+    @media (max-width: $vp-770) {
+      padding-left: 30px;
+    }
+  }
+
+  @media (max-width: $vp-770) {
+    flex-direction: column;
+  }
+
+  &--modal {
+    flex-direction: column;
+
+    label {
+      padding-left: 30px;
+    }
+  }
+}
+
+.wrapper-check button {
+  min-width: 265px;
+  font-size: 16px;
+  line-height: 19px;
+  border: none;
+  background: #041427;
+  border-radius: 3px;
+  margin-right: 50px;
+
+  @media (max-width: $vp-1024) {
+    margin-right: 85px;
+  }
+
+  @media (max-width: $vp-770) {
+    margin-right: 0;
+    margin-bottom: 21px;
+  }
+
+  &:focus {
+    border: none;
+    outline: 2px solid #ffffff;
+  }
+
+  &:active {
+    background-color: #00b3ff;
+  }
+}

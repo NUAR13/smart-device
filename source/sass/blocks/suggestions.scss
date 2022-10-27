@@ -34,22 +34,20 @@
   }
 }
 
-.suggetions__heading {
-  &--desktop {
-    display: block;
+.suggetions__heading-desktop {
+  display: block;
 
-    @media (max-width: $vp-770) {
-      display: none;
-    }
-  }
-
-  &--mobile {
+  @media (max-width: $vp-770) {
     display: none;
-    width: 250px;
+  }
+}
 
-    @media (max-width: $vp-770) {
-      display: block;
-    }
+.suggetions__heading-mobile {
+  display: none;
+  width: 250px;
+
+  @media (max-width: $vp-770) {
+    display: block;
   }
 }
 
@@ -72,7 +70,7 @@
   }
 }
 
-.suggestions__link {
+.suggestions__item a {
   position: relative;
   min-width: 100%;
   min-height: 650px;
@@ -115,116 +113,16 @@
     background-position: 50% 50%;
   }
 
-  &--production {
-    background-image: url("../img/card-desktop-1.webp");
-    backdrop-filter: opacity(20%);
-
-    @media (min-resolution: 144dpi),
-      (min-resolution: 1.5dppx) {
-      &--production {
-        background-image: url("../img/card-desktop-1@2x.webp");
-      }
-    }
-  }
-
-  &--mounting {
-    background-image: url("../img/card-desktop-2.webp");
-
-    @media (min-resolution: 144dpi),
-      (min-resolution: 1.5dppx) {
-      &--production {
-        background-image: url("../img/card-desktop-2@2x.webp");
-      }
-    }
-  }
-
-  &--accessories {
-    background-image: url("../img/card-desktop-3.webp");
-
-    @media (min-resolution: 144dpi),
-      (min-resolution: 1.5dppx) {
-      &--production {
-        background-image: url("../img/card-desktop-3@2x.webp");
-      }
-    }
-  }
-
   @media (max-width: $vp-1024) {
     min-width: 670px;
     min-height: 250px;
     padding: 40px 45px;
-
-    &--production {
-      background-image: url("../img/card-tablet-1.webp");
-
-      @media (min-resolution: 144dpi),
-        (min-resolution: 1.5dppx) {
-        &--production {
-          background-image: url("../img/card-tablet-1@2x.webp");
-        }
-      }
-    }
-
-    &--mounting {
-      background-image: url("../img/card-tablet-2.webp");
-
-      @media (min-resolution: 144dpi),
-        (min-resolution: 1.5dppx) {
-        &--production {
-          background-image: url("../img/card-tablet-2@2x.webp");
-        }
-      }
-    }
-
-    &--accessories {
-      background-image: url("../img/card-tablet-3.webp");
-
-      @media (min-resolution: 144dpi),
-        (min-resolution: 1.5dppx) {
-        &--production {
-          background-image: url("../img/card-tablet-3@2x.webp");
-        }
-      }
-    }
   }
 
   @media (max-width: $vp-770) {
     min-width: 270px;
     min-height: 250px;
     padding: 25px 30px;
-
-    &--production {
-      background-image: url("../img/card-mobile-1.webp");
-
-      @media (min-resolution: 144dpi),
-        (min-resolution: 1.5dppx) {
-        &--production {
-          background-image: url("../img/card-mobile-1@2x.webp");
-        }
-      }
-    }
-
-    &--mounting {
-      background-image: url("../img/card-mobile-2.webp");
-
-      @media (min-resolution: 144dpi),
-        (min-resolution: 1.5dppx) {
-        &--production {
-          background-image: url("../img/card-mobile-1@2x.webp");
-        }
-      }
-    }
-
-    &--accessories {
-      background-image: url("../img/card-mobile-3.webp");
-
-      @media (min-resolution: 144dpi),
-        (min-resolution: 1.5dppx) {
-        &--production {
-          background-image: url("../img/card-mobile-3@2x.webp");
-        }
-      }
-    }
 
     &::after {
       width: 40px;
@@ -243,5 +141,107 @@
 
   &:active {
     opacity: 0.5;
+  }
+}
+
+.suggestions__item--production a {
+  background-image: url("../img/card-desktop-1.webp");
+  backdrop-filter: opacity(20%);
+
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    .suggestions__item--production a {
+      background-image: url("../img/card-desktop-1@2x.webp");
+    }
+  }
+
+  @media (max-width: $vp-1024) {
+    background-image: url("../img/card-tablet-1.webp");
+
+    @media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+      .suggestions__item--production a {
+        background-image: url("../img/card-tablet-1@2x.webp");
+      }
+    }
+  }
+
+  @media (max-width: $vp-770) {
+    background-image: url("../img/card-mobile-1.webp");
+
+    @media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+      .suggestions__item--production a {
+        background-image: url("../img/card-mobile-1@2x.webp");
+      }
+    }
+  }
+}
+
+.suggestions__item--mounting a {
+  background-image: url("../img/card-desktop-2.webp");
+  backdrop-filter: opacity(20%);
+
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    .suggestions__item--mounting a {
+      background-image: url("../img/card-desktop-2@2x.webp");
+    }
+  }
+
+  @media (max-width: $vp-1024) {
+    background-image: url("../img/card-tablet-2.webp");
+
+    @media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+      .suggestions__item--mounting a {
+        background-image: url("../img/card-tablet-2@2x.webp");
+      }
+    }
+  }
+
+  @media (max-width: $vp-770) {
+    background-image: url("../img/card-mobile-2.webp");
+
+    @media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+      .suggestions__item--mounting a {
+        background-image: url("../img/card-mobile-2@2x.webp");
+      }
+    }
+  }
+}
+
+.suggestions__item--accessories a {
+  background-image: url("../img/card-desktop-3.webp");
+  backdrop-filter: opacity(20%);
+
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    .suggestions__item--accessories a {
+      background-image: url("../img/card-desktop-3@2x.webp");
+    }
+  }
+
+  @media (max-width: $vp-1024) {
+    background-image: url("../img/card-tablet-3.webp");
+
+    @media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+      .suggestions__item--accessories a {
+        background-image: url("../img/card-tablet-3@2x.webp");
+      }
+    }
+  }
+
+  @media (max-width: $vp-770) {
+    background-image: url("../img/card-mobile-3.webp");
+
+    @media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+      .suggestions__item--accessories a {
+        background-image: url("../img/card-mobile-3@2x.webp");
+      }
+    }
   }
 }

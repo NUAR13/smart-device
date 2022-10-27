@@ -1,4 +1,4 @@
-.button {
+button {
   min-width: 160px;
   min-height: 40px;
   padding: 14px 10px;
@@ -12,10 +12,6 @@
   border-radius: 3px;
   color: #f2f5f7;
   cursor: pointer;
-
-  &--red {
-    background-color: $color-torch-red;
-  }
 
   &:disabled {
     opacity: 0.5;

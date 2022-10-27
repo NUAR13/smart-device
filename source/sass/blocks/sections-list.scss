@@ -21,7 +21,7 @@
   flex-direction: column;
 }
 
-.sections-list__link {
+.sections-list__item a {
   margin-bottom: 10px;
   margin-right: 50px;
 
@@ -30,8 +30,8 @@
   }
 }
 
-.sections-list__link,
-.contacts-list__link {
+.sections-list__item a,
+.contacts-list__item a {
   font-family: $ff-ptmono;
   font-size: 16px;
   line-height: 135%;
