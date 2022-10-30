@@ -27,20 +27,31 @@
   background: #00b3ff;
   border-radius: 3px;
   width: 500px;
-  padding: 35px 40px;
+  padding: 35px 40px 41px;
 
   form {
     min-width: 420px;
 
     h2 {
+      font-size: 30px;
+      line-height: 140.62%;
       margin-bottom: 10px;
     }
 
     p {
-      margin-bottom: 40px;
-      font-size: 14px;
-      line-height: 16px;
+      width: 400px;
+      margin-bottom: 35px;
+      font-size: 16px;
+      line-height: 22px;
     }
+
+    textarea {
+      margin-bottom: 25px;
+    }
+  }
+
+  & button:hover {
+    fill: #041427;
   }
 }
 
@@ -58,12 +69,24 @@
 
   svg {
     margin: auto;
+    fill: #ffffff;
+  }
+
+  &:hover {
+    svg {
+      fill: #041427;
+    }
+  }
+
+  &:focus {
+    border: none;
+    outline: 2px solid #041427;
   }
 }
 
 .wrapper-check--modal button {
   margin-right: 0;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   padding: 14px 10px;
 }
 

@@ -1,16 +1,16 @@
 .benefits {
-  padding: 120px 348px 60px 350px;
+  padding: 120px 348px 35px 350px;
 
   @media (max-width: $vp-1920) {
-    padding: 120px 98px 60px 100px;
+    padding: 120px 98px 35px 100px;
   }
 
   @media (max-width: $vp-1024) {
-    padding: 80px 53px 40px 49px;
+    padding: 80px 53px 15px 49px;
   }
 
   @media (max-width: $vp-770) {
-    padding: 50px 25px 25px;
+    padding: 50px 25px 0;
   }
 }
 
@@ -20,7 +20,7 @@
   column-gap: 31px;
   row-gap: 30px;
   padding: 0;
-  margin: 0;
+  margin: 0 0 25px;
   list-style: none;
 
   @media (max-width: $vp-770) {

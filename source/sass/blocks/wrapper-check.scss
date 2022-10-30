@@ -1,11 +1,14 @@
 .wrapper-check {
   display: flex;
+  flex-wrap: wrap;
 
   label {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     position: relative;
+    width: 260px;
+    padding-top: 15px;
     padding-left: 26px;
 
     span {
@@ -29,7 +32,13 @@
     flex-direction: column;
 
     label {
-      padding-left: 30px;
+      width: 100%;
+      padding-top: 8px;
+      padding-left: 35px;
+
+      input[type="checkbox"] + span {
+        left: 9px;
+      }
     }
   }
 }
@@ -42,6 +51,7 @@
   background: #041427;
   border-radius: 3px;
   margin-right: 50px;
+  margin-bottom: 5px;
 
   @media (max-width: $vp-1024) {
     margin-right: 85px;
@@ -49,7 +59,7 @@
 
   @media (max-width: $vp-770) {
     margin-right: 0;
-    margin-bottom: 21px;
+    margin-bottom: 8px;
   }
 
   &:focus {

@@ -158,6 +158,12 @@
   }
 }
 
+.no-js > .page-footer__accordeon-list {
+  @media (max-width: $vp-770) {
+    display: flex;
+  }
+}
+
 .page-footer__accordeon-show {
   @media (max-width: $vp-770) {
     display: flex;

@@ -1,17 +1,17 @@
 .suggestions {
   background: #041827;
-  padding: 66px 350px 142px;
+  padding: 66px 350px 112px;
 
   @media (max-width: $vp-1920) {
-    padding: 70px 100px 140px;
+    padding: 70px 100px 110px;
   }
 
   @media (max-width: $vp-1024) {
-    padding: 56px 51px 75px;
+    padding: 56px 51px 45px;
   }
 
   @media (max-width: $vp-770) {
-    padding: 50px 25px 86px;
+    padding: 50px 25px 56px;
   }
 
   h2 {
@@ -55,7 +55,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 85px;
-  margin: 0;
+  row-gap: 30px;
+  margin: 0 0 30px;
   padding: 0;
   list-style: none;
 
@@ -66,19 +67,18 @@
   @media (max-width: $vp-1024) {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 250px);
-    row-gap: 30px;
   }
 }
 
 .suggestions__item a {
-  position: relative;
   min-width: 100%;
   min-height: 650px;
   display: block;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
-  padding: 50px 40px;
+  background-color: #00b2ff;
+  padding: 50px 40px 60px;
 
   h3 {
     width: 160px;

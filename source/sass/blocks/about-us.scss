@@ -1,6 +1,7 @@
 .about-us {
   display: flex;
-  padding: 60px 350px 100px;
+  flex-wrap: wrap;
+  padding: 60px 340px 100px 350px;
 
   @media (max-width: $vp-1920) {
     padding: 60px 100px 100px;
@@ -19,6 +20,11 @@
 
   img {
     margin-right: 100px;
+    flex-basis: 12%;
+
+    @media (max-width: $vp-1920) {
+      margin-right: 20px;
+    }
 
     @media (max-width: $vp-1024) {
       height: 320px;
@@ -60,6 +66,14 @@
       font-size: 14px;
       line-height: 134.4%;
     }
+  }
+}
+
+.about-us__info-wrapper {
+  flex-basis: 79%;
+
+  @media (max-width: $vp-770) {
+    flex-basis: 100%;
   }
 }
 

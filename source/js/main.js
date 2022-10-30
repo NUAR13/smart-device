@@ -51,6 +51,35 @@ const modal = document.querySelector('.modal')
 const openModalButton = document.querySelector('.open-modal')
 const closeModalButton = document.querySelector('.modal__close')
 
+function trapFocus(element) {
+  var focusableEls = element.querySelectorAll('a[href]:not([disabled]), button:not([disabled]), textarea:not([disabled]), input[type="text"]:not([disabled]), input[type="radio"]:not([disabled]), input[type="checkbox"]:not([disabled]), select:not([disabled])');
+  var firstFocusableEl = focusableEls[0];
+  var lastFocusableEl = focusableEls[focusableEls.length - 1];
+  var KEYCODE_TAB = 9;
+  firstFocusableEl.focus();
+
+  element.addEventListener('keydown', function(e) {
+    var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
+
+
+    if (!isTabPressed) {
+      return;
+    }
+
+    if ( e.shiftKey ) /* shift + tab */ {
+      if (document.activeElement === firstFocusableEl) {
+        lastFocusableEl.focus();
+          e.preventDefault();
+        }
+      } else /* tab */ {
+      if (document.activeElement === lastFocusableEl) {
+        firstFocusableEl.focus();
+          e.preventDefault();
+        }
+      }
+  });
+}
+
 function existVerticalScroll() {
   return document.body.offsetHeight > window.innerHeight
 }
@@ -63,9 +92,8 @@ openModalButton.addEventListener('click', e => {
   e.preventDefault()
 
   body.dataset.scrollY = getBodyScrollTop()
-
-
   modal.classList.add('modal-open')
+  trapFocus(modal)
 
   if(existVerticalScroll()) {
     body.classList.add('body-lock')
@@ -81,8 +109,23 @@ closeModalButton.addEventListener('click', e => {
   window.scrollTo(0,body.dataset.scrollY)
 })
 
+const closeImgUploadEsc = (keydownEvt) => {
+  if (keydownEvt.keyCode === 27) {
+    modal.classList.remove('modal-open')
+    body.classList.remove('body-lock')
+    window.scrollTo(0,body.dataset.scrollY)
+  }
+};
+
+document.addEventListener('keydown', closeImgUploadEsc);
+
 let allElems = document.querySelectorAll('.page-footer .page-footer__button-wrapper');
 let allButton = document.querySelectorAll('.page-footer .open-accordion');
+let closeNoJs = document.querySelectorAll('.page-footer__accordeon-item');
+
+closeNoJs.forEach((element) => {
+  element.classList.remove('no-js')
+})
 
 allElems.forEach((elem)=>{
     elem.addEventListener('click', function(evt){
