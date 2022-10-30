@@ -1862,10 +1862,6 @@ button:focus {
   }
 
   .about-us {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 150px 1fr;
-    grid-template-columns: 150px 1fr;
     padding: 35px 46px 79px 77px;
   }
 
@@ -1873,10 +1869,16 @@ button:focus {
     height: 320px;
     padding-top: 5px;
     margin-left: -30px;
+    margin-right: 29px;
   }
 
   .about-us p {
     margin-bottom: 17px;
+  }
+
+  .about-us__info-wrapper {
+    -ms-flex-preferred-size: 76%;
+    flex-basis: 76%;
   }
 
   .about-us button {
@@ -2120,9 +2122,6 @@ button:focus {
   }
 
   .about-us {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     padding: 25px 25px 77px;
   }
 

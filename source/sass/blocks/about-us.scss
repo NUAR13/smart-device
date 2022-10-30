@@ -8,13 +8,10 @@
   }
 
   @media (max-width: $vp-1024) {
-    display: grid;
-    grid-template-columns: 150px 1fr;
     padding: 35px 46px 79px 77px;
   }
 
   @media (max-width: $vp-770) {
-    display: flex;
     padding: 25px 25px 77px;
   }
 
@@ -30,6 +27,7 @@
       height: 320px;
       padding-top: 5px;
       margin-left: -30px;
+      margin-right: 29px;
     }
 
     @media (max-width: $vp-770) {
@@ -71,6 +69,10 @@
 
 .about-us__info-wrapper {
   flex-basis: 79%;
+
+  @media (max-width: $vp-1024) {
+    flex-basis: 76%;
+  }
 
   @media (max-width: $vp-770) {
     flex-basis: 100%;
