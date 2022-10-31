@@ -193,9 +193,9 @@ window.addEventListener("DOMContentLoaded", function() {
 });
 
 var elemText = document.querySelector(".about-us__open-mobile");
-var buttonOpen = document.querySelector(".about-us__button");
+var buttonOpen = document.querySelector(".about-us__button-mobile");
 
-buttonOpen.addEventListener("click" , function() {
+buttonOpen.addEventListener("click", function() {
   if(elemText.style.display == "block") {
     elemText.style.display = "none";
     buttonOpen.innerHTML = "Подробнее";
