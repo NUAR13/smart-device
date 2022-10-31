@@ -1,22 +1,24 @@
 .social-list {
   display: grid;
-  grid-template-columns: repeat(3, 30px);
-  column-gap: 25px;
+  grid-template-columns: repeat(3, 40px);
+  column-gap: 15px;
   list-style: none;
-  margin: 0 0 0 15px;
+  margin: 0 0 0 10px;
   padding: 0;
 
   @media (max-width: $vp-1024) {
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-right: -5px;
   }
 
-  @media (max-width: $vp-1024) {
-    margin-left: 3px;
+  @media (max-width: $vp-770) {
+    margin-right: 5px;
   }
 }
 
 .social-list__item a {
   display: flex;
+  padding: 5px;
 
   svg {
     fill: #f8fdff;

@@ -19,11 +19,11 @@
 .sections-list__item {
   display: flex;
   flex-direction: column;
+  margin-right: 50px;
 }
 
 .sections-list__item a {
   margin-bottom: 10px;
-  margin-right: 50px;
 
   @media (max-width: $vp-1024) {
     margin-bottom: 8px;
@@ -33,6 +33,7 @@
 .sections-list__item a,
 .contacts-list__item a {
   font-family: $ff-ptmono;
+  width: max-content;
   font-size: 16px;
   line-height: 135%;
   color: rgba(255, 255, 255, 0.7);

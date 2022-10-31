@@ -29,7 +29,7 @@
   }
 
   @media (max-width: $vp-770) {
-    padding: 35px 25px 25px;
+    padding: 35px 25px 20px;
     flex-direction: column;
     align-items: center;
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
@@ -37,7 +37,11 @@
 }
 
 .page-footer__wrapper-info a {
-  margin-bottom: 27px;
+  margin-bottom: 22px;
+
+  @media (max-width: $vp-1024) {
+    margin-bottom: 26px;
+  }
 
   @media (max-width: $vp-770) {
     margin-bottom: 3px;

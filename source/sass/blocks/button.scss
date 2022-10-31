@@ -11,6 +11,7 @@ button {
   border: 1px solid #f2f5f7;
   border-radius: 3px;
   color: #f2f5f7;
+  user-select: none;
   cursor: pointer;
 
   &:disabled {

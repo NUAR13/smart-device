@@ -7,6 +7,7 @@
     flex-wrap: wrap;
     align-items: center;
     position: relative;
+    order: 1;
     width: 260px;
     padding-top: 15px;
     padding-left: 26px;
@@ -19,7 +20,12 @@
       color: #ffffff;
     }
 
+    @media (max-width: $vp-1024) {
+      padding-top: 6px;
+    }
+
     @media (max-width: $vp-770) {
+      padding-top: 16px;
       padding-left: 30px;
     }
   }

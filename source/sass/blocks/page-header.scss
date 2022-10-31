@@ -96,6 +96,8 @@
 }
 
 .page-header__wrapper-navigation {
+  position: sticky;
+  top: 0;
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
   padding: 20px 0 35px 0;
 
@@ -116,6 +118,7 @@
   display: flex;
   justify-content: center;
   width: 410px;
+  user-select: none;
   background: #00b2ff;
   border: none;
   border-radius: 3px;

@@ -94,6 +94,10 @@ input::placeholder {
   opacity: 1;
 }
 
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
 input[type="checkbox"] + span {
   position: absolute;
   top: 63%;
@@ -108,7 +112,13 @@ input[type="checkbox"] + span {
   border-radius: 2px;
   margin: 0;
 
+  @media (max-width: $vp-1024) {
+    top: 50%;
+    left: 1%;
+  }
+
   @media (max-width: $vp-770) {
+    top: 63%;
     left: 1%;
   }
 }
