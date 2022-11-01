@@ -26,11 +26,11 @@
   position: relative;
   background: #00b3ff;
   border-radius: 3px;
-  width: 500px;
+  max-width: 500px;
   padding: 35px 40px 41px;
 
   form {
-    min-width: 420px;
+    min-width: 220px;
 
     h2 {
       font-size: 30px;
@@ -39,7 +39,7 @@
     }
 
     p {
-      width: 400px;
+      max-width: 400px;
       margin-bottom: 35px;
       font-size: 16px;
       line-height: 22px;

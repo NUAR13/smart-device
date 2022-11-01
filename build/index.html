@@ -14,52 +14,49 @@
   <link rel="preload" as="image" href="img/background-main-mobile.webp" type="image/jpg">
 </head>
 
-<body class="no-js">
+<body>
   <header class="page-header">
-    <div class="page-header__wrapper-navigation">
-      <nav class="navigation">
-        <a href="#" aria-label="Логотип">
-          <div class="navigation__logo-desktop">
-            <svg width="215" height="55" focusable="false">
-              <use xlink:href="img/sprite/sprite.svg#logo-desktop"></use>
-            </svg>
-          </div>
-          <div class="navigation__logo-mobile">
-            <svg width="35" height="35" focusable="false">
-              <use xlink:href="img/sprite/sprite.svg#logo-mobile"></use>
-            </svg>
-          </div>
-        </a>
-        <div class="navigation__wrapper-contact">
-          <a href="mailto:info@sd.ru" aria-label="Почта">
-            <svg width="21" height="20" focusable="false">
-              <use xlink:href="img/sprite/sprite.svg#email"></use>
-            </svg>
-            <span>info@sd.ru</span>
-          </a>
-          <a href="tel:+7(495)0005252" aria-label="Номер телефона">
-            <svg width="21" height="20" focusable="false">
-              <use xlink:href="img/sprite/sprite.svg#phone"></use>
-            </svg>
-            <span>+7 (495) 000 52 52</span>
-          </a>
+    <nav class="navigation">
+      <a href="#" aria-label="Логотип">
+        <div class="navigation__logo-desktop">
+          <svg width="215" height="55" focusable="false">
+            <use xlink:href="img/sprite/sprite.svg#logo-desktop"></use>
+          </svg>
         </div>
-        <button class="open-modal" type="button" data-open-modal aria-label="Открыть попап">
-          Заказать звонок
-        </button>
-      </nav>
-    </div>
-    <div class="page-header__wrapper-info">
+        <div class="navigation__logo-mobile">
+          <svg width="35" height="35" focusable="false">
+            <use xlink:href="img/sprite/sprite.svg#logo-mobile"></use>
+          </svg>
+        </div>
+      </a>
+      <div class="navigation__wrapper-contact">
+        <a href="mailto:info@sd.ru" aria-label="Почта">
+          <svg width="21" height="20" focusable="false">
+            <use xlink:href="img/sprite/sprite.svg#email"></use>
+          </svg>
+          <span>info@sd.ru</span>
+        </a>
+        <a href="tel:+7(495)0005252" aria-label="Номер телефона">
+          <svg width="21" height="20" focusable="false">
+            <use xlink:href="img/sprite/sprite.svg#phone"></use>
+          </svg>
+          <span>+7 (495) 000 52 52</span>
+        </a>
+      </div>
+      <button class="open-modal" type="button" data-open-modal aria-label="Открыть попап">
+        Заказать звонок
+      </button>
+    </nav>
+  </header>
+  <main>
+    <section class="main-screen">
       <h1>Печатные платы</h1>
       <p>производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
       <a href="#block-feedback">
         <span>Получить бесплатную консультацию</span>
         <span>Бесплатная консультация</span>
       </a>
-    </div>
-  </header>
-  <main>
-
+    </section>
     <section class="benefits">
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="benefits__list">
@@ -110,10 +107,12 @@
           года. Выполняем срочные заказы и&nbsp;пилотные образцы до&nbsp;10&nbsp;дней.</p>
 
         <p>Наши поставщики&nbsp;&mdash; мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC,
-          REFOND. <span class="about-us__open-mobile">Печатные
+          REFOND. <span class="about-us__open-mobile about-us__open-desktop">Печатные
             платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных Дорог (РЖД),
             РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители
             светотехники России.</span></p>
+        <p class="about-us__open-desktop">Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.</p>
+        <p class="about-us__open-desktop">Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов</p>
         <button class="about-us__button-mobile" type="button"
           aria-label="Открыть дополнительный текст">Подробнее</button>
       </div>
@@ -154,8 +153,7 @@
             <label class="visually-hidden" for="names">
               <span>Имя заказчика</span>
             </label>
-            <input class="myValidate" type="text" id="names" name="name" placeholder="Имя"
-              pattern="^[A-Za-zА-Яа-яЁё\s]{1,17}" required>
+            <input class="myValidate" type="text" id="names" name="name" placeholder="Имя" minlength="1" required>
             <label class="visually-hidden" for="phones">
               <span>Телефон заказчика</span>
             </label>
@@ -213,7 +211,7 @@
     <div class="page-footer__wrapper-sections page-footer__accordeon-item no-js">
       <h3>Разделы сайта</h3>
       <div class="page-footer__button-wrapper">
-        <button class="open-accordion" type="button" aria-label="Открыть вкладку аккордеона"></button>
+        <button class="open-accordion" type="button" aria-label="Открыть вкладку аккордеона">Разделы сайта</button>
       </div>
       <ul class="sections-list page-footer__accordeon-list">
         <li class="sections-list__item">
@@ -246,7 +244,7 @@
     <div class="page-footer__wrapper-contact page-footer__accordeon-item no-js">
       <h3>Наш офис</h3>
       <div class="page-footer__button-wrapper">
-        <button class="open-accordion" type="button" aria-label="Открыть вкладку аккордеона"></button>
+        <button class="open-accordion" type="button" aria-label="Открыть вкладку аккордеона">Наш офис</button>
       </div>
       <ul class="contacts-list page-footer__accordeon-list">
         <li class="contacts-list__item">
@@ -290,8 +288,7 @@
             <label class="visually-hidden" for="name-modal">
               <span>Имя заказчика</span>
             </label>
-            <input type="text" id="name-modal" name="name" placeholder="Имя" pattern="^[A-Za-zА-Яа-яЁё\s]{1,17}"
-              required>
+            <input type="text" id="name-modal" name="name" placeholder="Имя" minlength="1" required>
             <label class="visually-hidden" for="phone-modal">
               <span>Телефон заказчика</span>
             </label>

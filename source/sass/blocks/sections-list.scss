@@ -3,6 +3,10 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (max-width: $vp-770) {
+    padding: 0 25px 10px;
+  }
 }
 
 .sections-list {
@@ -10,7 +14,7 @@
   width: 470px;
   flex-wrap: wrap;
 
-  @media (max-width: $vp-1024) {
+  @media (max-width: $vp-1280) {
     flex-direction: column;
     width: max-content;
   }

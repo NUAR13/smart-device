@@ -56,7 +56,7 @@ function trapFocus(element) {
   var firstFocusableEl = focusableEls[0];
   var lastFocusableEl = focusableEls[focusableEls.length - 1];
   var KEYCODE_TAB = 9;
-  firstFocusableEl.focus();
+  focusableEls[1].focus();
 
   element.addEventListener('keydown', function(e) {
     var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
@@ -101,15 +101,16 @@ openModalButton.addEventListener('click', e => {
   }
 })
 
-closeModalButton.addEventListener('click', e => {
-  e.preventDefault()
-
+const closeModal = (evt) => {
+  evt.preventDefault()
   modal.classList.remove('modal-open')
   body.classList.remove('body-lock')
   window.scrollTo(0,body.dataset.scrollY)
-})
+};
 
-const closeImgUploadEsc = (keydownEvt) => {
+closeModalButton.addEventListener('click', closeModal);
+
+const closeModalEsc = (keydownEvt) => {
   if (keydownEvt.keyCode === 27) {
     modal.classList.remove('modal-open')
     body.classList.remove('body-lock')
@@ -117,7 +118,15 @@ const closeImgUploadEsc = (keydownEvt) => {
   }
 };
 
-document.addEventListener('keydown', closeImgUploadEsc);
+document.addEventListener('keydown', closeModalEsc);
+
+body.addEventListener('click', function(e) {
+  if (e.target !== openModalButton) {
+    modal.classList.remove('modal-open')
+    body.classList.remove('body-lock')
+  }
+  return
+});
 
 let allElems = document.querySelectorAll('.page-footer .page-footer__button-wrapper');
 let allButton = document.querySelectorAll('.page-footer .open-accordion');
@@ -192,16 +201,23 @@ window.addEventListener("DOMContentLoaded", function() {
 
 });
 
-var elemText = document.querySelector(".about-us__open-mobile");
+var elemTextMobile = document.querySelector(".about-us__open-mobile");
+var elemTextDesktop = document.querySelectorAll(".about-us__open-desktop");
 var buttonOpen = document.querySelector(".about-us__button-mobile");
 
-buttonOpen.addEventListener("click", function() {
-  if(elemText.style.display == "block") {
-    elemText.style.display = "none";
-    buttonOpen.innerHTML = "Подробнее";
+const textInvis = () => {
+  elemTextDesktop.forEach ((element) =>{
+    if(element.classList.contains('about-us__open-desktop')) {
+      element.classList.remove('about-us__open-desktop')
+      elemTextMobile.classList.add('about-us__mobile-invis')
+      buttonOpen.innerHTML = "Скрыть";
   }
   else {
-    elemText.style.display = "block";
-    buttonOpen.innerHTML = "Скрыть";
+    element.classList.add('about-us__open-desktop')
+    elemTextMobile.classList.remove('about-us__mobile-invis')
+    buttonOpen.innerHTML = "Подробнее";
   }
-})
+  })
+}
+
+buttonOpen.addEventListener("click", textInvis);

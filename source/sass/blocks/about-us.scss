@@ -16,6 +16,7 @@
   }
 
   img {
+    height: 320px;
     margin-right: 100px;
     flex-basis: 12%;
 
@@ -67,6 +68,24 @@
   }
 }
 
+.about-us__open-desktop {
+  display: none;
+}
+
+.about-us__open-mobile {
+  display: block;
+
+  @media (max-width: $vp-770) {
+    display: none;
+  }
+}
+
+.about-us__mobile-invis {
+  @media (max-width: $vp-770) {
+    display: block;
+  }
+}
+
 .about-us__info-wrapper {
   flex-basis: 79%;
 
@@ -76,12 +95,6 @@
 
   @media (max-width: $vp-770) {
     flex-basis: 100%;
-  }
-}
-
-.about-us__open-mobile {
-  @media (max-width: $vp-770) {
-    display: none;
   }
 }
 
