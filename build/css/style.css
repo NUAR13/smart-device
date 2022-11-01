@@ -673,8 +673,6 @@ button:active {
 }
 
 .page-header {
-  position: sticky;
-  top: 0;
   z-index: 10;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
   background: -o-linear-gradient(top, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
@@ -776,7 +774,7 @@ a:hover .navigation__logo-desktop {
   background-size: cover;
   background-position: 50%;
   background-color: #041827;
-  padding: 16% 50px 20px 25%;
+  padding: 304px 50px 20px 25%;
   margin-top: -130px;
 }
 
@@ -1837,6 +1835,9 @@ button:focus {
 
 @media (max-width: 1023px) {
   .page-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
     padding: 10px 70px 25px 50px;
   }
 
@@ -1863,7 +1864,7 @@ button:focus {
 
   .main-screen {
     min-height: 640px;
-    padding: 23% 50px 20px 7%;
+    padding: 179px 50px 20px 7%;
     margin-top: -110px;
     background-image: url("../img/background-main-tablet.webp");
   }
@@ -2085,7 +2086,7 @@ button:focus {
 
   .main-screen {
     min-height: 560px;
-    padding: 47% 50px 20px 7%;
+    padding: 150px 50px 20px 7%;
     margin-top: -83px;
     background-image: url("../img/background-main-mobile.webp");
   }

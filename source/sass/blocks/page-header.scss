@@ -1,6 +1,4 @@
 .page-header {
-  position: sticky;
-  top: 0;
   z-index: 10;
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
   padding: 20px 0 35px 0;
@@ -10,6 +8,9 @@
   }
 
   @media (max-width: $vp-1024) {
+    position: sticky;
+    top: 0;
+    z-index: 10;
     padding: 10px 70px 25px 50px;
   }
 
