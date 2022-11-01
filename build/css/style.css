@@ -673,6 +673,8 @@ button:active {
 }
 
 .page-header {
+  position: sticky;
+  top: 0;
   z-index: 10;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
   background: -o-linear-gradient(top, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
@@ -1835,9 +1837,7 @@ button:focus {
 
 @media (max-width: 1023px) {
   .page-header {
-    position: sticky;
-    top: 0;
-    z-index: 10;
+    position: relative;
     padding: 10px 70px 25px 50px;
   }
 
