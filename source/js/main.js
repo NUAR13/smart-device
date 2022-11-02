@@ -48,6 +48,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 const body = document.querySelector('body')
 const modal = document.querySelector('.modal')
+const modalCon = document.querySelector('.modal__content')
 const openModalButton = document.querySelector('.open-modal')
 const closeModalButton = document.querySelector('.modal__close')
 
@@ -121,12 +122,13 @@ const closeModalEsc = (keydownEvt) => {
 document.addEventListener('keydown', closeModalEsc);
 
 body.addEventListener('click', function(e) {
-  if (e.target !== openModalButton) {
+  if (e.target !== openModalButton && e.target.closest('.modal__content') === null) {
     modal.classList.remove('modal-open')
     body.classList.remove('body-lock')
   }
   return
 });
+
 
 let allElems = document.querySelectorAll('.page-footer .page-footer__button-wrapper');
 let allButton = document.querySelectorAll('.page-footer .open-accordion');
@@ -210,7 +212,7 @@ const textInvis = () => {
     if(element.classList.contains('about-us__open-desktop')) {
       element.classList.remove('about-us__open-desktop')
       elemTextMobile.classList.add('about-us__mobile-invis')
-      buttonOpen.innerHTML = "Скрыть";
+      buttonOpen.innerHTML = "Свернуть";
   }
   else {
     element.classList.add('about-us__open-desktop')

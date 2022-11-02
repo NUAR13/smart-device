@@ -9,6 +9,10 @@
     padding: 20px 100px 35px;
   }
 
+  @media (max-width: $vp-1280) {
+    padding: 20px 85px 35px;
+  }
+
   @media (max-width: $vp-1024) {
     position: relative;
     padding: 10px 70px 25px 50px;

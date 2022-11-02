@@ -1,7 +1,7 @@
 .about-us {
   display: flex;
   flex-wrap: wrap;
-  padding: 60px 340px 100px 350px;
+  padding: 60px 320px 100px 350px;
 
   @media (max-width: $vp-1920) {
     padding: 60px 100px 100px;
@@ -37,6 +37,7 @@
   }
 
   h2 {
+    max-width: 970px;
     font-weight: 400;
     font-size: 36px;
     line-height: 51px;
@@ -50,11 +51,13 @@
   }
 
   p {
+    max-width: 970px;
     font-family: $ff-ptmono;
     font-size: 16px;
     line-height: 22px;
     color: #041827;
     margin-top: 0;
+    margin-right: 0;
     margin-bottom: 20px;
 
     @media (max-width: $vp-1024) {
@@ -73,7 +76,7 @@
 }
 
 .about-us__open-mobile {
-  display: block;
+  display: inline;
 
   @media (max-width: $vp-770) {
     display: none;
@@ -82,12 +85,16 @@
 
 .about-us__mobile-invis {
   @media (max-width: $vp-770) {
-    display: block;
+    display: inline;
   }
 }
 
 .about-us__info-wrapper {
   flex-basis: 79%;
+
+  @media (max-width: $vp-1280) {
+    flex-basis: 77%;
+  }
 
   @media (max-width: $vp-1024) {
     flex-basis: 76%;
