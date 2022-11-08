@@ -1814,6 +1814,11 @@ button:focus {
     column-gap: 50px;
   }
 
+  .feedback {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
   .feedback__wrapper-form {
     padding-right: 100px;
   }
@@ -1995,11 +2000,6 @@ button:focus {
 
   .suggestions__item--accessories a {
     background-image: url("../img/card-tablet-3.webp");
-  }
-
-  .feedback {
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
   }
 
   .feedback {

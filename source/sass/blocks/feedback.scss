@@ -4,7 +4,7 @@
   grid-template-columns: 960px 1fr;
   background-color: #00b3ff;
 
-  @media (max-width: $vp-1024) {
+  @media (max-width: $vp-1920) {
     grid-template-columns: 1fr 1fr;
   }
 
