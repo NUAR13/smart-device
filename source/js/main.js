@@ -167,6 +167,7 @@ allElems.forEach((elem)=>{
 })
 
 const input = document.querySelectorAll(".tel");
+const submitFormButton = document.querySelector(".form-submit");
 
 const prefixNumber = (str) => {
   if (str === "7") {
@@ -217,6 +218,11 @@ input.forEach((elem) => {
     }
   //
     elem.value = result;
+    if(elem.value.length < 18){
+      submitFormButton.disabled = true;
+    } else {
+      submitFormButton.disabled = false;
+    }
   });
 });
 

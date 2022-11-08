@@ -1,13 +1,13 @@
 .suggestions {
   background: #041827;
-  padding: 66px 350px 112px;
+  padding: 66px 335px 112px 350px;
 
   @media (max-width: $vp-1920) {
     padding: 70px 100px 110px;
   }
 
   @media (max-width: $vp-1024) {
-    padding: 56px 50px 45px;
+    padding: 56px 34px 45px 50px;
   }
 
   @media (max-width: $vp-770) {

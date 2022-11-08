@@ -99,7 +99,9 @@
       </ul>
     </section>
     <section class="about-us" id="about-us">
-      <img src="./img/year.webp" srcset="img/year@2x.webp 2x" loading="lazy" width="320" height="150" alt="Год">
+      <div class="about-us__img-wrapper">
+        <img src="./img/year.webp" srcset="img/year@2x.webp 2x" loading="lazy" width="320" height="150" alt="Год">
+      </div>
       <div class="about-us__info-wrapper">
         <h2>О&nbsp;компании</h2>
         <p>Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые
@@ -160,7 +162,7 @@
             <label class="visually-hidden" for="phones">
               <span>Телефон заказчика</span>
             </label>
-            <input class="tel" type="tel" id="phones" name="phone" placeholder="Телефон" required>
+            <input class="tel" type="tel" id="phones" name="phone" placeholder="Телефон" minlength="15" required>
           </div>
           <label class="visually-hidden" for="сustomer">
             <span>Вопрос заказчика</span>
@@ -173,7 +175,7 @@
               <span></span>
               <span>Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
             </label>
-            <button type="submit">Задать вопрос</button>
+            <button class="form-submit" type="submit">Задать вопрос</button>
           </div>
         </form>
       </div>

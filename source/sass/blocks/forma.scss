@@ -2,6 +2,7 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  max-width: 670px;
   min-width: 580px;
   margin-left: auto;
 
@@ -76,10 +77,6 @@ form {
     &:active {
       opacity: 0.5;
     }
-  }
-
-  @media (max-width: $vp-1024) {
-    min-width: 670px;
   }
 
   @media (max-width: $vp-770) {

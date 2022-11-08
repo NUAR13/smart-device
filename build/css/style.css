@@ -946,10 +946,8 @@ a:hover .navigation__logo-desktop {
 }
 
 .about-us img {
-  height: 320px;
-  margin-right: 100px;
-  -ms-flex-preferred-size: 12%;
-  flex-basis: 12%;
+  width: 150px;
+  min-height: 320px;
 }
 
 .about-us h2 {
@@ -970,6 +968,13 @@ a:hover .navigation__logo-desktop {
   margin-top: 0;
   margin-right: 0;
   margin-bottom: 20px;
+}
+
+.about-us__img-wrapper {
+  min-width: 150px;
+  margin-right: 100px;
+  -ms-flex-preferred-size: 12%;
+  flex-basis: 12%;
 }
 
 .about-us__open-desktop {
@@ -995,6 +1000,11 @@ a:hover .navigation__logo-desktop {
   margin-top: 19px;
 }
 
+.about-us button:focus {
+  border: 2px solid #041827;
+  border-radius: 3px;
+}
+
 .about-us button:active {
   background-color: #041827;
   border-radius: 3px;
@@ -1002,7 +1012,7 @@ a:hover .navigation__logo-desktop {
 
 .suggestions {
   background: #041827;
-  padding: 66px 350px 112px;
+  padding: 66px 335px 112px 350px;
 }
 
 .suggestions h2 {
@@ -1103,10 +1113,11 @@ a:hover .navigation__logo-desktop {
 }
 
 .feedback {
+  position: relative;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 960px 1fr;
+  grid-template-columns: 960px 1fr;
   background-color: #00b3ff;
 }
 
@@ -1120,12 +1131,12 @@ a:hover .navigation__logo-desktop {
 
 .feedback__wrapper-img img {
   position: absolute;
-  top: 29%;
-  right: 11%;
+  top: 245px;
+  right: 95px;
 }
 
 .feedback__wrapper-form {
-  padding: 161px 358px 243px 21px;
+  padding: 161px 338px 243px 21px;
 }
 
 form {
@@ -1139,6 +1150,7 @@ form {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: end;
+  max-width: 670px;
   min-width: 580px;
   margin-left: auto;
 }
@@ -1788,7 +1800,7 @@ button:focus {
     padding: 60px 100px 100px;
   }
 
-  .about-us img {
+  .about-us__img-wrapper {
     margin-right: 20px;
   }
 
@@ -1926,18 +1938,17 @@ button:focus {
   }
 
   .about-us {
-    padding: 35px 46px 79px 77px;
-  }
-
-  .about-us img {
-    height: 320px;
-    padding-top: 5px;
-    margin-left: -30px;
-    margin-right: 29px;
+    padding: 35px 28px 79px 77px;
   }
 
   .about-us p {
     margin-bottom: 17px;
+  }
+
+  .about-us__img-wrapper {
+    padding-top: 5px;
+    margin-left: -30px;
+    margin-right: 29px;
   }
 
   .about-us__info-wrapper {
@@ -1950,7 +1961,7 @@ button:focus {
   }
 
   .suggestions {
-    padding: 56px 50px 45px;
+    padding: 56px 34px 45px 50px;
   }
 
   .suggestions h2 {
@@ -1987,6 +1998,11 @@ button:focus {
   }
 
   .feedback {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .feedback {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
@@ -2011,10 +2027,6 @@ button:focus {
     padding-top: 28px;
   }
 
-  form {
-    min-width: 670px;
-  }
-
   input[type=checkbox] + span {
     top: 50%;
     left: 1%;
@@ -2029,7 +2041,7 @@ button:focus {
   }
 
   .page-footer {
-    padding: 50px;
+    padding: 50px 33px 50px 50px;
   }
 
   .page-footer__wrapper-info {
@@ -2183,10 +2195,6 @@ button:focus {
     padding: 25px 25px 77px;
   }
 
-  .about-us img {
-    display: none;
-  }
-
   .about-us h2 {
     font-size: 28px;
     line-height: 140.62%;
@@ -2195,6 +2203,10 @@ button:focus {
   .about-us p {
     font-size: 14px;
     line-height: 134.4%;
+  }
+
+  .about-us__img-wrapper {
+    display: none;
   }
 
   .about-us__open-mobile {

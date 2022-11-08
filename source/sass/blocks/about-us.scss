@@ -8,7 +8,7 @@
   }
 
   @media (max-width: $vp-1024) {
-    padding: 35px 46px 79px 77px;
+    padding: 35px 28px 79px 77px;
   }
 
   @media (max-width: $vp-770) {
@@ -16,24 +16,8 @@
   }
 
   img {
-    height: 320px;
-    margin-right: 100px;
-    flex-basis: 12%;
-
-    @media (max-width: $vp-1920) {
-      margin-right: 20px;
-    }
-
-    @media (max-width: $vp-1024) {
-      height: 320px;
-      padding-top: 5px;
-      margin-left: -30px;
-      margin-right: 29px;
-    }
-
-    @media (max-width: $vp-770) {
-      display: none;
-    }
+    width: 150px;
+    min-height: 320px;
   }
 
   h2 {
@@ -68,6 +52,26 @@
       font-size: 14px;
       line-height: 134.4%;
     }
+  }
+}
+
+.about-us__img-wrapper {
+  min-width: 150px;
+  margin-right: 100px;
+  flex-basis: 12%;
+
+  @media (max-width: $vp-1920) {
+    margin-right: 20px;
+  }
+
+  @media (max-width: $vp-1024) {
+    padding-top: 5px;
+    margin-left: -30px;
+    margin-right: 29px;
+  }
+
+  @media (max-width: $vp-770) {
+    display: none;
   }
 }
 
@@ -122,6 +126,11 @@
     min-width: 160px;
     padding: 11px 10px;
     margin-top: -6px;
+  }
+
+  &:focus {
+    border: 2px solid #041827;
+    border-radius: 3px;
   }
 
   &:active {
